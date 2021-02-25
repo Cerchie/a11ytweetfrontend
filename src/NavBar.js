@@ -20,7 +20,7 @@ function NavBar({ logout }) {
                 <nav
                     role="navigation"
                     aria-label="Nav"
-                    className="rounded bg-blue-50 text-red-600 text-2xl p-6 m-6"
+                    className="rounded bg-blue-50 text-blue-900 text-2xl p-6 m-6"
                 >
                     <ul>
                         <li ref={linkInput}>
@@ -43,7 +43,7 @@ function NavBar({ logout }) {
         function loggedInNav() {
             return (
                 <>
-                    <h1 className="rounded bg-blue-50 text-red-600 text-2xl p-6 m-6">
+                    <h1 className="rounded bg-blue-50 text-blue-900 text-2xl p-6 m-6">
                         <Link exact to="/" className="navbar-brand">
                             Hi {currentUser.username}!
                         </Link>
@@ -51,7 +51,7 @@ function NavBar({ logout }) {
                     <nav
                         role="navigation"
                         aria-label="Nav"
-                        className="rounded bg-blue-50 text-red-600 text-2xl p-6 m-6"
+                        className="rounded bg-blue-50 text-blue-900 text-2xl p-6 m-6"
                     >
                         <ul>
                             <li>

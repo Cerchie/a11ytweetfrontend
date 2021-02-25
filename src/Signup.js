@@ -56,14 +56,14 @@ const Signup = ({ signupUser }) => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <div className="shadow-md rounded-xl bg-blue-50 text-red-700 text-2xl p-6 m-6">
+            <div className="shadow-md rounded-xl bg-blue-50 text-blue-900 text-2xl p-6 m-6">
                 <>
                     <h1 className=" rounded-xl bg-white text-gray-600 text-2xl p-6 m-6">
                         Set your username/password
                     </h1>
                     <label
                         htmlFor="username"
-                        className=" text-red-700 text-2xl p-6 m-6"
+                        className=" text-blue-900 text-2xl p-6 m-6"
                     >
                         Username
                     </label>
@@ -79,7 +79,7 @@ const Signup = ({ signupUser }) => {
                 <>
                     <label
                         htmlFor="password"
-                        className=" text-red-700 text-2xl p-6 m-6"
+                        className=" text-blue-900 text-2xl p-6 m-6"
                     >
                         Password
                     </label>

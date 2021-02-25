@@ -60,7 +60,7 @@ function Profile({ saveProfile }) {
         //maybe add a 'if Curruser...''
         return (
             <form onSubmit={handleSubmit}>
-                <div className="shadow-md rounded-xl bg-blue-50 text-red-700 text-2xl p-6 m-6">
+                <div className="shadow-md rounded-xl bg-blue-50 text-blue-900 text-2xl p-6 m-6">
                     <>
                         <label
                             htmlFor="username"
@@ -80,7 +80,7 @@ function Profile({ saveProfile }) {
                     <>
                         <label
                             htmlFor="password"
-                            className=" text-red-700 text-2xl p-6 m-6"
+                            className=" text-blue-900 text-2xl p-6 m-6"
                         >
                             Password
                         </label>
@@ -99,7 +99,7 @@ function Profile({ saveProfile }) {
                         type="submit"
                         className="btn btn-primary float-right"
                         onSubmit={handleSubmit}
-                        className=" text-red-600 text-2xl"
+                        className=" text-blue-900 text-2xl"
                     >
                         Submit
                     </button>
