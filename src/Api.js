@@ -8,7 +8,7 @@ const BASE_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:3001'
 //  *
 // /
 class Api {
-    // the token for interactive with the API will be stored here.
+    // the token for interacting with the API will be stored here.
     static token
     //function for making a request to the API
     static async request(endpoint, data = {}, method = 'get') {

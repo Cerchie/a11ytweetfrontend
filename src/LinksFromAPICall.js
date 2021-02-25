@@ -1,11 +1,14 @@
 import { React, useState, useEffect } from 'react'
 import { useContext } from 'react'
-import token from './token'
+
 import { useSelector, useDispatch } from 'react-redux'
 import UserContext from './UserContext'
 import Link from './Link'
 
 function LinksFromAPICall() {
+    //token from netlify
+    const token = process.env.REACT_APP_TOKEN
+
     if (useContext(UserContext) !== undefined) {
         const { currentUser } = useContext(UserContext)
         const dispatch = useDispatch()
