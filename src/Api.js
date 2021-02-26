@@ -16,7 +16,14 @@ class Api {
         const headers = { Authorization: `Bearer ${Api.token}` }
         const params = method === 'get' ? data : {}
         console.debug('API Call:', endpoint, data, method, params, headers, url) //this is not undefined
-        let axiosRequest = await axios({ url, method, data, params, headers })
+        let axiosRequest = await axios({
+            url,
+            method,
+            data,
+            params,
+            headers,
+            mode: 'cors',
+        })
         console.log(axiosRequest)
         try {
             return axiosRequest.data //this is undefined, therefore there is a problem in the API call
@@ -39,7 +46,16 @@ class Api {
 
         try {
             console.log({ url, method, data, params, headers })
-            return (await axios({ url, method, data, params, headers })).data
+            return (
+                await axios({
+                    url,
+                    method,
+                    data,
+                    params,
+                    headers,
+                    mode: 'cors',
+                })
+            ).data
         } catch (err) {
             console.error('API Error:', err.response)
             let message = err.response.data.error.message
