@@ -34,7 +34,6 @@ class Api {
         const url = `${BASE_URL}/${endpoint}`
         const headers = {
             Authorization: `Bearer ${Api.token}`,
-            'Access-Control-Allow-Origin': '*',
         }
         const params = method === 'post' ? data : {}
 
