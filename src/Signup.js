@@ -44,11 +44,10 @@ const Signup = ({ signupUser }) => {
         let result = await signupUser({
             user,
         })
-        if (result.success) {
+        try {
             goHome()
-        } else {
+        } catch {
             setFormErrors(result.errors)
-            alert('signup not successful')
         }
         setUser(INITIAL_STATE)
         setSaveConfirmed(true)
