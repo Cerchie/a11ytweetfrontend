@@ -27,7 +27,7 @@ function LinksFromAPICall() {
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/vnd.github.mercy-preview+json',
-                    Authorization: `${token}`,
+                    Authorization: `${process.env.REACT_APP_TOKEN}`,
                 },
             })
                 .then((res) => res.json())
