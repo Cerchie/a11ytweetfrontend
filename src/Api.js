@@ -73,7 +73,7 @@ class Api {
     /** Signup for site. */
 
     static async signup(data) {
-        let res = await this.request(`users/`, data, 'post')
+        let res = await this.post(`users/`, data)
         return res.token
     }
 
