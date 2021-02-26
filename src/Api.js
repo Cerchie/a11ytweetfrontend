@@ -32,7 +32,10 @@ class Api {
         console.debug('API Call:', endpoint, data, method)
 
         const url = `${BASE_URL}/${endpoint}`
-        const headers = { Authorization: `Bearer ${Api.token}` }
+        const headers = {
+            Authorization: `Bearer ${Api.token}`,
+            'Access-Control-Allow-Origin': '*',
+        }
         const params = method === 'post' ? data : {}
 
         try {
