@@ -14,7 +14,6 @@ class Api {
     static async request(endpoint, data = {}, method = 'get') {
         const url = `${BASE_URL}/${endpoint}`
         const headers = {
-            Authorization: `Bearer ${Api.token}`,
             'Access-Control-Allow-Origin': '*',
         }
         const params = method === 'get' ? data : {}
@@ -42,7 +41,7 @@ class Api {
 
         const url = `${BASE_URL}/${endpoint}`
         const headers = {
-            Authorization: `Bearer ${Api.token}`,
+            'Access-Control-Allow-Origin': '*',
         }
         const params = method === 'post' ? data : {}
 
