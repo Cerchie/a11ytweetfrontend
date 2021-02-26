@@ -15,6 +15,7 @@ class Api {
         const url = `${BASE_URL}/${endpoint}`
         const headers = {
             Authorization: `Bearer ${Api.token}`,
+            'Access-Control-Allow-Origin': '*',
         }
         const params = method === 'get' ? data : {}
         console.debug('API Call:', endpoint, data, method, params, headers, url) //this is not undefined
