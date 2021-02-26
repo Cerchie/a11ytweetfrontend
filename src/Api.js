@@ -13,7 +13,9 @@ class Api {
     //function for making a request to the API
     static async request(endpoint, data = {}, method = 'get') {
         const url = `${BASE_URL}/${endpoint}`
-        const headers = { Authorization: `Bearer ${Api.token}` }
+        const headers = {
+            Authorization: `Bearer ${process.env.REACT_APP_TOKEN}`,
+        }
         const params = method === 'get' ? data : {}
         console.debug('API Call:', endpoint, data, method, params, headers, url) //this is not undefined
         let axiosRequest = await axios({
