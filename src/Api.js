@@ -22,7 +22,6 @@ class Api {
             data,
             params,
             headers,
-            mode: 'cors',
         })
         console.log(axiosRequest)
         try {
@@ -53,7 +52,6 @@ class Api {
                     data,
                     params,
                     headers,
-                    mode: 'cors',
                 })
             ).data
         } catch (err) {
